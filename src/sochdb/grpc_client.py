@@ -131,7 +131,8 @@ class SochDBClient:
         dimension: int,
         metric: str = "cosine",
         m: int = 16,
-        ef_construction: int = 200
+        ef_construction: int = 200,
+        ef_search: int = 0
     ) -> bool:
         """Create a new vector index."""
         stub = self._get_stub("VectorIndexService")
@@ -143,7 +144,8 @@ class SochDBClient:
             metric=getattr(sochdb_pb2, f"DISTANCE_METRIC_{metric.upper()}", 2),
             config=sochdb_pb2.HnswConfig(
                 max_connections=m,
-                ef_construction=ef_construction
+                ef_construction=ef_construction,
+                ef_search=ef_search
             )
         ))
         return response.success
@@ -173,7 +175,7 @@ class SochDBClient:
         index_name: str,
         query: List[float],
         k: int = 10,
-        ef: int = 50
+        ef: int = 0
     ) -> List[SearchResult]:
         """Search for k-nearest neighbors."""
         stub = self._get_stub("VectorIndexService")
