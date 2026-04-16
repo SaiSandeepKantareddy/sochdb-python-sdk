@@ -109,7 +109,7 @@ jobs:
             wheel_platform: macosx_11_0_arm64
             archive_ext: tar.gz
 
-          - os: macos-13
+          - os: macos-latest
             target: x86_64-apple-darwin
             wheel_platform: macosx_10_15_x86_64
             archive_ext: tar.gz
