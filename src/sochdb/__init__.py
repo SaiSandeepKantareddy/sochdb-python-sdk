@@ -32,7 +32,7 @@ Example (Server Mode):
     client.put_kv("key", b"value")
 """
 
-__version__ = "0.5.6"
+__version__ = "0.5.7"
 
 # Embedded mode (FFI)
 from .database import Database, Transaction, IsolationLevel
