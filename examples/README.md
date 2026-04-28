@@ -26,6 +26,7 @@ cargo build --release
 | `06_json_documents.py` | Embedded | Storing and querying JSON documents |
 | `07_session_cache.py` | Embedded | Session caching use case |
 | `08_ipc_client.py` | IPC | Multi-process access via IPC |
+| `26_hosted_studio_ingest.py` | gRPC + Studio | Remote write plus hosted Studio event ingestion |
 
 ## Running Examples
 
@@ -64,6 +65,7 @@ examples/
 ├── 06_json_documents.py        # JSON document storage
 ├── 07_session_cache.py         # Session caching pattern
 ├── 08_ipc_client.py            # IPC client examples
+├── 26_hosted_studio_ingest.py  # Remote SochDB + hosted Studio example
 └── shared/
     └── mock_server.py          # Mock server for testing
 ```

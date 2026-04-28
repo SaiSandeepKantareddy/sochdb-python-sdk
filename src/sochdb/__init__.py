@@ -69,6 +69,7 @@ from .queue import (
 # Server mode (gRPC/IPC)
 from .grpc_client import SochDBClient, SearchResult, Document, GraphNode, GraphEdge, TemporalEdge
 from .ipc_client import IpcClient
+from .studio import StudioAPIError, StudioClient, StudioEventIngestResult
 
 # Format utilities
 from .format import (
@@ -153,6 +154,9 @@ __all__ = [
     "SochDBClient",
     "GrpcClient",
     "IpcClient",
+    "StudioClient",
+    "StudioAPIError",
+    "StudioEventIngestResult",
     
     # Format utilities
     "WireFormat",
