@@ -66,6 +66,11 @@ There is also a matching manual GitHub Actions workflow at
 `.github/workflows/hosted-smoke.yml` for running the same hosted smoke path on
 demand.
 
+Latest hosted validation:
+
+- GitHub-hosted workflow passed on May 5, 2026:
+  `https://github.com/SaiSandeepKantareddy/sochdb-python-sdk/actions/runs/25357489415`
+
 ## Directory Structure
 
 ```
